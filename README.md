@@ -5,13 +5,15 @@ An API wrapper for chain.so, a blockchain explorer for bitcoin, litecoin and dog
 
 ## Installation
 
-  npm install node-chainso --save
-
+```javascript
+	npm install node-chainso --save
+```
 ## Usage
 
-  chainso = require ('node-chainso');
-  chainso.getBalance (chainso.networks.bitcoin, '13TRVwiqLMveg9aPAmZgcAix5ogKVgpe4T', 3, function (err, res) { console.log (res); });
-
+```javascript
+	chainso = require ('node-chainso');
+	chainso.getBalance (chainso.networks.bitcoin, '13TRVwiqLMveg9aPAmZgcAix5ogKVgpe4T', 3, function (err, res) { console.log (res); });
+```
 
 ## Contributing
 
