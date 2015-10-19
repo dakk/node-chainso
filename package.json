@@ -1,7 +1,7 @@
 {
   "name": "node-chainso",
-  "version": "0.1.0",
-  "description": "chain.so API wrapper for blockchains (bitcoin, litecoin, dogecoin)",
+  "version": "0.1.3",
+  "description": "API wrapper for http://chain.so, a blockchain explorer for bitcoin, litecoin and dogecoin",
   "main": "source/chainso.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
