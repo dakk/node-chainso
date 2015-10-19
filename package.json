@@ -1,0 +1,26 @@
+{
+  "name": "node-chainso",
+  "version": "0.1.0",
+  "description": "chain.so API wrapper for blockchains (bitcoin, litecoin, dogecoin)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dakk/node-chainso.git"
+  },
+  "keywords": [
+    "chainso",
+    "api",
+    "bitcoin",
+    "litecoin",
+    "dogecoin",
+    "blockchain"
+  ],
+  "author": "Davide Gessa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dakk/node-chainso/issues"
+  }
+}
