@@ -5,7 +5,7 @@ An API wrapper for chain.so, a blockchain explorer for bitcoin, litecoin and dog
 
 ## Installation
 
-```javascript
+```bash
 	npm install node-chainso --save
 ```
 ## Usage
