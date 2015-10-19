@@ -9,6 +9,8 @@ An API wrapper for chain.so, a blockchain explorer for bitcoin, litecoin and dog
 
 ## Usage
 
+  chainso = require ('node-chainso');
+  chainso.getBalance (chainso.networks.bitcoin, '13TRVwiqLMveg9aPAmZgcAix5ogKVgpe4T', 3, function (err, res) { console.log (res); });
 
 
 ## Contributing

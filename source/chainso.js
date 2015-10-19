@@ -27,7 +27,10 @@ var api_get = function (endpoint, handler) {
 		response.on('data', function (chunk) { str += chunk; });
 		response.on('end', function () { 
 			var data = JSON.parse (str);
-			handler (null, data);
+			if (data.status == 'success') 
+				handler (null, data.data);
+			else
+				handler (data.data, null);
 		});
 	}
 
