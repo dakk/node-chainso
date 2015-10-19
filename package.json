@@ -2,7 +2,7 @@
   "name": "node-chainso",
   "version": "0.1.0",
   "description": "chain.so API wrapper for blockchains (bitcoin, litecoin, dogecoin)",
-  "main": "index.js",
+  "main": "source/chainso.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dakk/node-chainso/issues"
-  }
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dakk/node-chainso/blob/master/LICENSE-MIT"
+    }
+  ],
 }
