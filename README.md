@@ -12,8 +12,10 @@ An API wrapper for http://chain.so, a blockchain explorer for bitcoin, litecoin 
 
 ```javascript
 	chainso = require ('node-chainso');
-	chainso.getBalance (chainso.networks.bitcoin, '13TRVwiqLMveg9aPAmZgcAix5ogKVgpe4T', 3, 
-				function (err, res) { 
+	chainso.getBalance (chainso.networks.bitcoin, 
+				'13TRVwiqLMveg9aPAmZgcAix5ogKVgpe4T', 
+				3, function (err, res) 
+	{ 
 		console.log (res); 
 	});
 ```
@@ -25,5 +27,6 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+* 0.1.3 Stable release
 * 0.1.0 Initial release
 

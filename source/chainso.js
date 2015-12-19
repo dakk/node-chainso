@@ -71,24 +71,40 @@ var api_post = function (endpoint, data, handler) {
 
 // GET /api/v2/get_address_balance/{NETWORK}/{ADDRESS}[/{MINIMUM CONFIRMATIONS}]
 var getBalance = function (network, address, minconf, handler) {
-	api_get ('/api/v2/get_address_balance/' + network + '/' + address + '/' + minconf, handler);
+	try {
+		api_get ('/api/v2/get_address_balance/' + network + '/' + address + '/' + minconf, handler);
+	} catch (e) {
+		handler (true, null);
+	}
 };
 
 // GET /api/v2/get_tx_unspent/{NETWORK}/{ADDRESS}
 var getUnspent = function (network, address, handler) {
-	api_get ('/api/v2/get_tx_unspent/' + network + '/' + address, handler);
+	try {
+		api_get ('/api/v2/get_tx_unspent/' + network + '/' + address, handler);
+	} catch (e) {
+		handler (true, null);
+	}
 };
 
 
 // GET /api/v2/get_tx/{NETWORK}/{TXID}
 var getTransaction = function (network, txid, handler) {
-	api_get ('/api/v2/get_tx/' + network + '/' + txid, handler);
+	try {
+		api_get ('/api/v2/get_tx/' + network + '/' + txid, handler);
+	} catch (e) {
+		handler (true, null);
+	}
 };
 
 
 // POST /api/v2/send_tx/{NETWORK} (d = tx_hex)
 var sendTransaction = function (network, tx_hex, handler) {
-	api_post ('/api/v2/send_tx/' + network, {tx_hex: tx_hex}, handler);
+	try {
+		api_post ('/api/v2/send_tx/' + network, {tx_hex: tx_hex}, handler);
+	} catch (e) {
+		handler (true, null);
+	}
 };
 
 
